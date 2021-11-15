@@ -1,4 +1,4 @@
-from pressButton.like_button import LikeState, press_many
+from src.pressButton.like_button import LikeState, press_many
 import pytest
 def test_empty_press():
     assert press_many(LikeState.empty, '') is LikeState.empty
@@ -37,9 +37,9 @@ def test_invalid_press():
         press_many(LikeState.empty,'x')
 
 #istanza di db_conn runnata come parametro di sessione nel file conftest.py
-def test_db_press(db_conn):
-    db_conn.read_press()
-    assert ...
+# def test_db_press(db_conn):
+#     db_conn.read_press()
+#     assert ...
 #capture_stdout configurato come parametro nel file conftest.py
 def test_print(capture_stdout):
     print("hello")

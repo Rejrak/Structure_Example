@@ -12,9 +12,9 @@ def capture_stdout(monkeypatch):
     monkeypatch.setattr(sys.stdout, 'write', fake_write)
     return buffer
 
-@pytest.fixture(scope="sesssion")
-def db_conn():
-    db = ...
-    url = ...
-    with db.connect(url) as conn:
-        yield conn
+# @pytest.fixture(scope="session")
+# def db_conn():
+#     db = ...
+#     url = ...
+#     with db.connect(url) as conn:
+#         yield conn
