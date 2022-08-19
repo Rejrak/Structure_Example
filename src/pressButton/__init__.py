@@ -1,1 +1,0 @@
-from . import like_button
